@@ -87,38 +87,21 @@ ul{list-style:none}
 [data-theme="light"] .blueprint-canvas{opacity:0.6}
 
 /* ═══════════════════════════════════════
-   NAV
+   FLOATING CONTROLS — no nav bar
 ═══════════════════════════════════════ */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:0 clamp(20px,5vw,80px);height:58px;
-  border-bottom:1px solid var(--border);
-  background:rgba(10,10,10,0.85);
-  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-  transition:background var(--t2) var(--ease),border-color var(--t2) var(--ease);
+.floating-controls{
+  position:fixed;top:20px;right:clamp(16px,3vw,40px);z-index:100;
+  display:flex;align-items:center;gap:8px;
 }
-[data-theme="light"] nav{background:rgba(248,246,242,0.88)}
-.nav-logo{
-  font-family:var(--mono);font-size:13px;font-weight:500;
-  letter-spacing:0.03em;color:var(--text-1);
-}
-.nav-logo em{color:var(--accent);font-style:normal}
-.nav-right{display:flex;align-items:center;gap:6px}
-.nav-links{display:flex;align-items:center;gap:2px;margin-right:8px}
-.nav-link{
-  font-family:var(--mono);font-size:11px;letter-spacing:0.06em;
-  color:var(--text-3);padding:5px 10px;border-radius:var(--radius);
-  transition:color var(--t1) var(--ease),background var(--t1) var(--ease);
-}
-.nav-link:hover{color:var(--text-1);background:var(--accent-g)}
-@media(max-width:640px){.nav-links{display:none}}
 .nav-btn{
   display:flex;align-items:center;justify-content:center;
   width:34px;height:34px;border-radius:var(--radius);
   border:1px solid var(--border);color:var(--text-2);
+  background:rgba(10,10,10,0.7);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
   transition:border-color var(--t1) var(--ease),color var(--t1) var(--ease),background var(--t1) var(--ease);
 }
+[data-theme="light"] .nav-btn{background:rgba(248,246,242,0.8)}
 .nav-btn:hover{border-color:var(--border-2);color:var(--text-1);background:var(--accent-g)}
 .nav-btn svg{width:15px;height:15px}
 .lang-btn{
@@ -127,8 +110,11 @@ nav{
   border:1px solid var(--border);
   font-family:var(--mono);font-size:11px;letter-spacing:0.06em;
   color:var(--text-2);
+  background:rgba(10,10,10,0.7);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
   transition:border-color var(--t1) var(--ease),color var(--t1) var(--ease),background var(--t1) var(--ease);
 }
+[data-theme="light"] .lang-btn{background:rgba(248,246,242,0.8)}
 .lang-btn:hover{border-color:var(--border-2);color:var(--text-1);background:var(--accent-g)}
 .lang-btn .active{color:var(--accent);font-weight:500}
 .lang-btn .sep{opacity:0.25;margin:0 1px}
@@ -141,7 +127,7 @@ nav{
 #hero{
   position:relative;
   min-height:100vh;display:flex;flex-direction:column;justify-content:center;
-  padding:120px clamp(20px,5vw,80px) 80px;
+  padding:80px clamp(20px,5vw,80px) 80px;
   max-width:100%;overflow:hidden;
 }
 .hero-content{position:relative;z-index:1;max-width:900px}
@@ -870,36 +856,23 @@ footer{
 <body>
 
 <!-- ════════════════════════════
-     NAV
+     FLOATING CONTROLS (no nav bar)
 ════════════════════════════ -->
-<nav>
-  <div class="nav-logo"><em>SOR</em>V</div>
-  <nav class="nav-links">
-    <a class="nav-link en-only" href="#systems">Systems</a>
-    <a class="nav-link ja-only" href="#systems">システム</a>
-    <a class="nav-link en-only" href="#projects">Projects</a>
-    <a class="nav-link ja-only" href="#projects">プロジェクト</a>
-    <a class="nav-link en-only" href="#research">Research</a>
-    <a class="nav-link ja-only" href="#research">研究</a>
-    <a class="nav-link en-only" href="#contact">Contact</a>
-    <a class="nav-link ja-only" href="#contact">連絡</a>
-  </nav>
-  <div class="nav-right">
-    <button class="lang-btn" onclick="toggleLang()" aria-label="Switch language">
-      <span id="lg-en" class="active">EN</span>
-      <span class="sep">/</span>
-      <span id="lg-ja">JP</span>
-    </button>
-    <button class="nav-btn" onclick="toggleTheme()" aria-label="Toggle theme">
-      <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-        <circle cx="12" cy="12" r="5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2m-3.5-7.5-1.5 1.5m-9 9-1.5 1.5m0-12 1.5 1.5m9 9 1.5 1.5"/>
-      </svg>
-      <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-      </svg>
-    </button>
-  </div>
-</nav>
+<div class="floating-controls">
+  <button class="lang-btn" onclick="toggleLang()" aria-label="Switch language">
+    <span id="lg-en" class="active">EN</span>
+    <span class="sep">/</span>
+    <span id="lg-ja">JP</span>
+  </button>
+  <button class="nav-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <circle cx="12" cy="12" r="5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2m-3.5-7.5-1.5 1.5m-9 9-1.5 1.5m0-12 1.5 1.5m9 9 1.5 1.5"/>
+    </svg>
+    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+  </button>
+</div>
 
 <div id="main-content">
 
