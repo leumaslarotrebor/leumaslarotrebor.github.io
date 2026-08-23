@@ -1,10 +1,4 @@
-import HeroImage from "/assets/hero-img.webp";
 
-const Image = {
-  HeroImage,
-};
-
-export default Image;
 
 import {
   FaPython, FaNodeJs, FaReact, FaGitAlt, FaGithub, FaJava, FaDocker,
