@@ -96,7 +96,8 @@ function App() {
               handle="leumaslarotrebor"
               status="Open to work"
               contactText="Contact Me"
-              avatarUrl="/assets/hero-img.webp"
+              avatarUrl="/assets/avatar.webp"
+              miniAvatarUrl="/assets/avatar-mini.webp"
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
