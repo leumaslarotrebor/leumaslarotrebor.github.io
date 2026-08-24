@@ -1,5 +1,3 @@
-
-
 import {
   FaPython, FaNodeJs, FaReact, FaGitAlt, FaGithub, FaJava, FaDocker,
 } from "react-icons/fa";
@@ -101,5 +99,65 @@ export const listProyek = [
     gradient: "linear-gradient(145deg, #EC4899, #000)",
     url: "https://github.com/leumaslarotrebor/samlang",
     dad: "600",
+  },
+  {
+    id: 7,
+    title: "DocuChat Pro",
+    subtitle: "AI document chat platform — Spring Boot backend, Next.js frontend.",
+    fullDescription:
+      "A document chat platform with a Java/Spring Boot backend (Dockerized) and a separate Next.js/TypeScript frontend, exploring the same document-intelligence problem as DocuMind with a different, JVM-based stack.",
+    tags: ["Java", "Spring Boot", "Docker", "Next.js", "TypeScript"],
+    borderColor: "#06B6D4",
+    gradient: "linear-gradient(145deg, #06B6D4, #000)",
+    url: "https://github.com/leumaslarotrebor/docuchat-pro",
+    dad: "700",
+  },
+  {
+    id: 8,
+    title: "NovaMark — Digital Marketing Platform",
+    subtitle: "Web & Product Development internship assignment — conversion-focused site with ROI calculator.",
+    fullDescription:
+      "A conversion-focused digital marketing services site built as a Web & Product Development internship assignment for Aprisity Technologies. Single-file, framework-free frontend with a working ROI calculator, pricing tiers, and scroll-driven interactions.",
+    tags: ["HTML", "CSS", "JavaScript", "No Framework"],
+    borderColor: "#FF4427",
+    gradient: "linear-gradient(180deg, #FF4427, #000)",
+    url: "https://github.com/leumaslarotrebor/novamark-digital",
+    dad: "800",
+  },
+  {
+    id: 9,
+    title: "Urban Drifter",
+    subtitle: "REST API backend with JWT authentication, built on Node.js and MongoDB.",
+    fullDescription:
+      "A Node.js/Express REST API backend with MongoDB via Mongoose, featuring JWT-based authentication and password hashing with bcrypt.",
+    tags: ["Node.js", "Express", "MongoDB", "JWT"],
+    borderColor: "#22C55E",
+    gradient: "linear-gradient(145deg, #22C55E, #000)",
+    url: "https://github.com/leumaslarotrebor/urban-drifter",
+    dad: "900",
+  },
+  {
+    id: 10,
+    title: "Vintage Todo App",
+    subtitle: "Full-stack todo app with a handcrafted 1960s-themed UI.",
+    fullDescription:
+      "A full-stack todo application with a Node.js/Express backend, MongoDB for persistent storage, and a handcrafted 1960s-themed frontend UI.",
+    tags: ["Node.js", "Express", "MongoDB", "HTML/CSS"],
+    borderColor: "#D97706",
+    gradient: "linear-gradient(180deg, #D97706, #000)",
+    url: "https://github.com/leumaslarotrebor/todo-fullstack-vintage-ui",
+    dad: "1000",
+  },
+  {
+    id: 11,
+    title: "JPMorgan Chase — Software Engineering Job Simulation",
+    subtitle: "Forage virtual experience: REST API → Kafka event stream → H2 SQL ingestion pipeline.",
+    fullDescription:
+      "Completed the JPMorgan Chase Advanced Software Engineering job simulation on Forage — built a REST API to Kafka event stream to H2 SQL ingestion pipeline and designed microservice boundaries and payload schemas.",
+    tags: ["Java", "Kafka", "REST API", "Forage Certified"],
+    borderColor: "#7C3AED",
+    gradient: "linear-gradient(145deg, #7C3AED, #000)",
+    url: "https://github.com/leumaslarotrebor/forage-midas",
+    dad: "1100",
   },
 ];
