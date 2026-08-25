@@ -115,7 +115,7 @@ function App() {
                 </h2>
 
                 <BlurText
-                  text="Final-year Computer Science Engineering graduate (Sathyabama Institute of Science and Technology, July 2026), working across backend systems, DevOps/SRE tooling, and applied AI. I build with Python, FastAPI, Node.js, and PostgreSQL, and freelance on React front-ends and API integrations for international clients. Published at IEEE ICIPCN 2026 for SmartFarmX, an IoT precision-agriculture project. Learning Japanese and building toward a career in Japan-focused engineering roles, drawn to the kaizen philosophy of continuous improvement."
+                  text="Computer Science Engineering graduate (Sathyabama Institute of Science and Technology, July 2026), working across backend systems, DevOps/SRE tooling, and applied AI. I build with Python, FastAPI, Node.js, and PostgreSQL, and freelance on React front-ends and API integrations for international clients. Published at IEEE ICIPCN 2026 for SmartFarmX, an IoT precision-agriculture project. Learning Japanese and building toward a career in Japan-focused engineering roles, drawn to the kaizen philosophy of continuous improvement."
                   delay={150}
                   animateBy="words"
                   direction="top"
