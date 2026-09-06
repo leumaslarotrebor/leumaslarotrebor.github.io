@@ -10,7 +10,7 @@ import {
 } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
 
-// Tools & Technologies — reflects resume: Technical Skills section
+// Tools & Technologies: reflects resume: Technical Skills section
 export const listTools = [
   // Data & Analytics
   { id: 1, icon: FaPython, nama: "Python", ket: "Language", dad: "100" },
@@ -52,7 +52,7 @@ export const listTools = [
 export const listProyek = [
   {
     id: 1,
-    title: "DocuMind — AI Document Intelligence",
+    title: "DocuMind: AI Document Intelligence",
     subtitle: "RAG-based document Q&A: upload a PDF, ask questions in natural language.",
     fullDescription:
       "Built a retrieval-augmented generation (RAG) system for document intelligence, integrating LLMs with ChromaDB/FAISS vector search to enable semantic querying over unstructured text. Deployed the system as a live application, applying generative AI and NLP techniques to a practical information-retrieval problem.",
@@ -76,8 +76,8 @@ export const listProyek = [
   },
   {
     id: 3,
-    title: "SmartFarmX — IoT Precision Agriculture",
-    subtitle: "IEEE ICIPCN 2026 published — ESP32-based sensor ingestion for precision agriculture.",
+    title: "SmartFarmX: IoT Precision Agriculture",
+    subtitle: "IEEE ICIPCN 2026 published, ESP32-based sensor ingestion for precision agriculture.",
     fullDescription:
       "Developed the sensor data ingestion layer for an IoT precision-agriculture system collecting real-time soil and environmental data; co-authored research published at IEEE ICIPCN 2026.",
     tags: ["ESP32", "C++", "IoT", "IEEE Published"],
@@ -88,7 +88,7 @@ export const listProyek = [
   },
   {
     id: 4,
-    title: "TaskFlow — Async Job Queue System",
+    title: "TaskFlow: Async Job Queue System",
     subtitle: "Production-style job queue: reliable retries, backoff, and a live monitoring dashboard.",
     fullDescription:
       "A production-grade job queue system built with Node.js, Express, PostgreSQL, and React. Submits async jobs via a REST API, processes them reliably with automatic retries and exponential backoff, and exposes real-time job status through a web dashboard.",
@@ -113,9 +113,9 @@ export const listProyek = [
   {
     id: 6,
     title: "SamLang",
-    subtitle: "A custom programming language built from scratch — lexer, parser, AST, interpreter.",
+    subtitle: "A custom programming language built from scratch: lexer, parser, AST, interpreter.",
     fullDescription:
-      "A custom programming language built from scratch in Python, with a handwritten lexer, recursive-descent parser, AST, and tree-walking interpreter — built to understand what actually happens between source code and execution.",
+      "A custom programming language built from scratch in Python, with a handwritten lexer, recursive-descent parser, AST, and tree-walking interpreter, built to understand what actually happens between source code and execution.",
     tags: ["Python", "Language Design", "Compilers"],
     borderColor: "#EC4899",
     gradient: "linear-gradient(145deg, #EC4899, #000)",
@@ -149,7 +149,7 @@ export const listProyek = [
   {
     id: 9,
     title: "DocuChat Pro",
-    subtitle: "AI document chat platform — Spring Boot backend, Next.js frontend.",
+    subtitle: "AI document chat platform: Spring Boot backend, Next.js frontend.",
     fullDescription:
       "A document chat platform with a Java/Spring Boot backend (Dockerized) and a separate Next.js/TypeScript frontend, exploring the same document-intelligence problem as DocuMind with a different, JVM-based stack.",
     tags: ["Java", "Spring Boot", "Docker", "Next.js", "TypeScript"],
@@ -160,8 +160,8 @@ export const listProyek = [
   },
   {
     id: 10,
-    title: "NovaMark — Digital Marketing Platform",
-    subtitle: "Web & Product Development internship assignment — conversion-focused site with ROI calculator.",
+    title: "NovaMark: Digital Marketing Platform",
+    subtitle: "Web & Product Development internship assignment, conversion-focused site with ROI calculator.",
     fullDescription:
       "A conversion-focused digital marketing services site built as a Web & Product Development internship assignment for Aprisity Technologies. Single-file, framework-free frontend with a working ROI calculator, pricing tiers, and scroll-driven interactions.",
     tags: ["HTML", "CSS", "JavaScript", "No Framework"],
@@ -196,10 +196,10 @@ export const listProyek = [
   },
   {
     id: 13,
-    title: "JPMorgan Chase — Software Engineering Job Simulation",
+    title: "JPMorgan Chase: Software Engineering Job Simulation",
     subtitle: "Forage virtual experience: REST API → Kafka event stream → H2 SQL ingestion pipeline.",
     fullDescription:
-      "Completed the JPMorgan Chase Advanced Software Engineering job simulation on Forage — built a REST API to Kafka event stream to H2 SQL ingestion pipeline and designed microservice boundaries and payload schemas.",
+      "Completed the JPMorgan Chase Advanced Software Engineering job simulation on Forage, building a REST API to Kafka event stream to H2 SQL ingestion pipeline and designed microservice boundaries and payload schemas.",
     tags: ["Java", "Kafka", "REST API", "Forage Certified"],
     borderColor: "#7C3AED",
     gradient: "linear-gradient(145deg, #7C3AED, #000)",

@@ -61,14 +61,11 @@ function App() {
 
         <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
           <div className="animate__animated animate__fadeInUp animate__delay-3s">
-            <div className="flex items-center gap-3 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl">
-              <q>Kaizen — small, continuous improvement.</q>
-            </div>
             <h1 className="text-5xl font-bold mb-6">
               <ShinyText text="Hi, I'm Samuel Oral Robert V" disabled={false} speed={3} className="custom-class" />
             </h1>
             <BlurText
-              text="Software & AI Engineer building backend systems, applied-AI pipelines, and developer tooling — with a focus on Japan-oriented engineering roles."
+              text="Software & AI Engineer building backend systems, applied-AI pipelines, and developer tooling."
               delay={150}
               animateBy="words"
               direction="top"
@@ -116,7 +113,7 @@ function App() {
                 </h2>
 
                 <BlurText
-                  text="Computer Science Engineering graduate (Sathyabama Institute of Science and Technology, July 2026), working across backend systems, DevOps/SRE tooling, and applied AI. I build with Python, FastAPI, Node.js, and PostgreSQL, and freelance on React front-ends and API integrations for international clients. Published at IEEE ICIPCN 2026 for SmartFarmX, an IoT precision-agriculture project. Learning Japanese and building toward a career in Japan-focused engineering roles, drawn to the kaizen philosophy of continuous improvement."
+                  text="Computer Science Engineering graduate (Sathyabama Institute of Science and Technology, July 2026), working across backend systems, DevOps/SRE tooling, and applied AI. I build with Python, FastAPI, Node.js, and PostgreSQL, and freelance on React front-ends and API integrations for international clients. Published at IEEE ICIPCN 2026 for SmartFarmX, an IoT precision-agriculture project. Drawn to the kaizen philosophy of continuous improvement."
                   delay={150}
                   animateBy="words"
                   direction="top"
@@ -161,7 +158,7 @@ function App() {
         </div>
         <div className="tools mt-32">
           <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >Tools & Technologies</h1>
-          <p className="w-2/5 text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Backend, DevOps/SRE, and applied AI — my day-to-day stack</p>
+          <p className="w-2/5 text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">My day-to-day stack across backend, DevOps/SRE, data analytics, and applied AI</p>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
 
             {listTools.map((tool) => {
@@ -205,7 +202,7 @@ function App() {
         {/* Projects */}
         <div className="proyek mt-32 py-10" id="project" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
         <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Projects</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">A selection of backend, SRE/DevOps, and applied-AI projects — click a card for details and source.</p>
+        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">A selection of backend, SRE/DevOps, and applied-AI projects. Click a card for details and source.</p>
         <div className="proyek-box mt-14" >
 
           <div style={{ height: 'auto', position: 'relative' }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" >
@@ -239,7 +236,7 @@ function App() {
             data-aos-delay="300"
             data-aos-once="true"
           >
-            Open to backend, SRE, data engineering, and AI-engineering roles — and freelance work.
+            Open to backend, SRE, data engineering, and AI-engineering roles, and freelance work.
           </p>
 
           <div className="flex flex-col md:flex-row gap-8">
@@ -247,11 +244,8 @@ function App() {
               <a href="mailto:samueloralrobert1234@gmail.com" className="flex items-center gap-3 text-lg hover:text-violet-400 transition-colors">
                 📧 samueloralrobert1234@gmail.com
               </a>
-              <a href="tel:+918925008320" className="flex items-center gap-3 text-lg hover:text-violet-400 transition-colors">
-                📱 +91 89250 08320
-              </a>
               <a href="https://github.com/leumaslarotrebor" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-lg hover:text-violet-400 transition-colors">
-                💻 github.com/leumaslarotrebor
+                💻 GitHub
               </a>
               <a href="https://linkedin.com/in/samuel-oral-robert-v-4226813a4" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-lg hover:text-violet-400 transition-colors">
                 🔗 LinkedIn
