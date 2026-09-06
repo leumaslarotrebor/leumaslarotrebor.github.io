@@ -10,6 +10,7 @@ import { listTools, listProyek } from "./data";
 import ChromaGrid from "./components/ChromaGrid/ChromaGrid";
 import ProjectModal from "./components/ProjectModal/ProjectModal";
 import Aurora from "./components/Aurora/Aurora";
+import AITools from "./components/AITools/AITools";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -125,7 +126,7 @@ function App() {
                 <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
                   <div>
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      6<span className="text-violet-500">+</span>
+                      5<span className="text-violet-500">+</span>
                     </h1>
                     <p>Public Projects</p>
                   </div>
@@ -190,6 +191,16 @@ function App() {
           </div>
         </div>
         {/* about */}
+
+        {/* AI Tools */}
+        <div className="ai-tools mt-32">
+          <h1 className="text-4xl/snug font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">AI Tools</h1>
+          <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Hover a logo to see how I use it in my work</p>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
+            <AITools />
+          </div>
+        </div>
+        {/* AI Tools */}
 
         {/* Projects */}
         <div className="proyek mt-32 py-10" id="project" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
