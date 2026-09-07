@@ -21,19 +21,6 @@ function App() {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const heroQuotes = [
-    { text: "Make it work, make it right, make it fast.", author: "Kent Beck" },
-    { text: "Working with heart, building with precision.", author: "" },
-  ];
-  const [quoteIndex, setQuoteIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setQuoteIndex((prev) => (prev + 1) % heroQuotes.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   const handleProjectClick = (project) => setSelectedProject(project);
   const handleCloseModal = () => setSelectedProject(null);
 
@@ -74,13 +61,9 @@ function App() {
 
         <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
           <div className="animate__animated animate__fadeInUp animate__delay-3s">
-            <div className="flex flex-col gap-1 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl min-h-[72px] justify-center">
-              <div key={quoteIndex} className="animate__animated animate__fadeIn">
-                <q>{heroQuotes[quoteIndex].text}</q>
-                {heroQuotes[quoteIndex].author && (
-                  <span className="block text-sm text-zinc-400 mt-1">{heroQuotes[quoteIndex].author}</span>
-                )}
-              </div>
+            <div className="flex flex-col gap-1 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl">
+              <q>Make it work, make it right, make it fast.</q>
+              <span className="text-sm text-zinc-400">Kent Beck</span>
             </div>
             <h1 className="text-5xl font-bold mb-6">
               <ShinyText text="Hi, I'm Samuel Oral Robert V" disabled={false} speed={3} className="custom-class" />
